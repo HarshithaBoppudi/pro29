@@ -13,11 +13,11 @@ class BaseClass{
       display(){
         push();
        fill("aqua");
-       var pos =this.body.position;
+      // var pos =this.body.position;
        
        
         translate(this.body.position.x, this.body.position.y);
-        rect(pos.x, pos.y, this.width, this.height);
+        rect(0, 0, this.width, this.height);
        
         pop();
       }

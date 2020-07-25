@@ -1,4 +1,4 @@
-/*class SlingShot{
+class SlingShot{
     constructor(bodyA, pointB){
         var options = {
             bodyA: bodyA,
@@ -11,7 +11,9 @@
         World.add(world, this.sling);
        
     }
-   
+    fly(){
+        this.sling.bodyA = null;
+    }
     display(){
        
             var pointA = this.sling.bodyA.position;
@@ -24,4 +26,4 @@
           
     
 }
-}*/
+}
